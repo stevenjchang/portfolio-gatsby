@@ -8,27 +8,27 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
+  heading: 'Steven J Chang',
   subHeading: 'Full time Web Developer. Part time Open source contributor  ',
   // social
   socialLinks: [
     {
       style: 'brands',
+      icon: 'fa-linkedin',
+      name: 'LinkedIn',
+      url: 'https://linkedin.com/stevenjchang',
+    },
+    {
+      style: 'brands',
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/stevenjchang',
     },
     {
       style: 'brands',
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      style: 'solid',
-      icon: 'fa-envelope',
-      name: 'Email',
-      url: 'mailto:test@example.com',
+      url: 'https://twitter.com/stevenjchang',
     },
   ],
 };
