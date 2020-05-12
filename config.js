@@ -6,23 +6,29 @@ module.exports = {
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
+  manifestIcon: 'src/assets/img/code-icon.png',
   pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Steven J Chang',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  subHeading: 'Front End Engineer, specializing in Marketing Technologies  ',
   // social
   socialLinks: [
     {
       style: 'brands',
       icon: 'fa-linkedin',
       name: 'LinkedIn',
-      url: 'https://linkedin.com/stevenjchang',
+      url: 'https://bit.ly/stevenjchang-linkedin',
     },
     {
       style: 'brands',
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/stevenjchang',
+      url: 'https://bit.ly/stevenjchang-github',
+    },
+    {
+      style: 'regular',
+      icon: 'fa-file',
+      name: 'Resume',
+      url: 'https://bit.ly/stevenjchang-resume',
     },
     {
       style: 'brands',
