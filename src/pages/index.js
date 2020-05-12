@@ -73,10 +73,10 @@ const IndexPage = () => (
           <img src={pic1} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Magna primis lobortis
+          <h2 style={{textTransform: 'none'}}>
+            SKUPOS
             <br />
-            sed ullamcorper
+            <span style={{color: 'gray'}}>Frontend Engineer</span>
           </h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -90,9 +90,9 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Tortor dolore feugiat
+            Nima Labs
             <br />
-            elementum magna
+            Frontend Engineer
           </h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -106,9 +106,9 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Augue eleifend aliquet
+            Zymergen
             <br />
-            sed condimentum
+            Software Engineer
           </h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -121,28 +121,25 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>Passion Projects</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+            I've build several websites that get live traffic. Even though it gets less than 100 unique visits a month, it's live and used by people.
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
           </p>
         </header>
         <ul className="features">
           <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
+            <h3>Guess the lines yourself</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
           <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
+            <h3>Get Tennis Alerts</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              tincidunt nullam amet leo Aenean ligula consequat consequat. 
             </p>
           </li>
           <li className="icon solid fa-code">
