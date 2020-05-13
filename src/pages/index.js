@@ -8,6 +8,28 @@ import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import config from '../../config';
+
+const dataArray = [
+  {
+    company: 'SKUPOS',
+    jobTitle: 'Frontend Engineer',
+    imageUrl: pic1,
+    bullets: ["Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf ", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf consectetur interdum.", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf Donec hendrerit imperdiet.", "Mauris eleifend fringilla nullam aenean mi ligula"],
+  },
+  {
+    company: 'Nima Labs',
+    jobTitle: 'Frontend Engineer',
+    imageUrl: pic2,
+    bullets: ["Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf ", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf consectetur interdum.", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf Donec hendrerit imperdiet.", "Mauris eleifend fringilla nullam aenean mi ligula"],
+  },
+  {
+    company: 'Zymergen',
+    jobTitle: 'Software Engineer',
+    imageUrl: pic3,
+    bullets: ["Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf ", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf consectetur interdum.", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf Donec hendrerit imperdiet.", "Mauris eleifend fringilla nullam aenean mi ligula"],
+  },
+]
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -68,7 +90,29 @@ const IndexPage = () => (
     </section>
 
     <section id="two" className="wrapper alt style2">
-      <section className="spotlight">
+
+
+      {dataArray.map(({ company, jobTitle, imageUrl, bullets }) => (
+        <section className="spotlight">
+          <div className="image">
+            <img src={imageUrl} alt="" />
+          </div>
+          <div className="content">
+            <h2 style={{ textTransform: 'none', letterSpacing: '3px', fontSize: '1.7em', marginBottom: '0px' }}>
+              {company}
+
+            </h2>
+            <p style={{ textTransform: 'uppercase', color: 'gray', letterSpacing: '1px', fontSize: '17px', marginBottom: '25px' }}>{jobTitle}</p>
+            <ul>
+              {bullets && bullets.map((bullet) => (
+                <li style={{ fontSize: '14px', fontWeight: '300', color: 'gray' }}>{bullet}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ))}
+
+      {/* <section className="spotlight">
         <div className="image">
           <img src={pic1} alt="" />
         </div>
@@ -115,7 +159,11 @@ const IndexPage = () => (
             imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
           </p>
         </div>
-      </section>
+      </section> */}
+
+
+
+
     </section>
 
     <section id="three" className="wrapper style3 special">
