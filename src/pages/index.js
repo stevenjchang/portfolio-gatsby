@@ -8,6 +8,28 @@ import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import config from '../../config';
+
+const dataArray = [
+  {
+    company: 'SKUPOS',
+    jobTitle: 'Frontend Engineer',
+    imageUrl: pic1,
+    bullets: ["Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf ", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf consectetur interdum.", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf Donec hendrerit imperdiet.", "Mauris eleifend fringilla nullam aenean mi ligula"],
+  },
+  {
+    company: 'Nima Labs',
+    jobTitle: 'Frontend Engineer',
+    imageUrl: pic2,
+    bullets: ["Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf ", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf consectetur interdum.", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf Donec hendrerit imperdiet.", "Mauris eleifend fringilla nullam aenean mi ligula"],
+  },
+  {
+    company: 'Zymergen',
+    jobTitle: 'Software Engineer',
+    imageUrl: pic3,
+    bullets: ["Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf ", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf consectetur interdum.", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf Donec hendrerit imperdiet.", "Mauris eleifend fringilla nullam aenean mi ligula"],
+  },
+]
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -49,12 +71,12 @@ const IndexPage = () => (
         </header>
         <ul className="icons major">
           <li>
-            <span className="icon fa-gem major style1">
+            <span className="icon fa-hdd major style1">
               <span className="label">Lorem</span>
             </span>
           </li>
           <li>
-            <span className="icon fa-heart major style2">
+            <span className="icon fa-compass major style2">
               <span className="label">Ipsum</span>
             </span>
           </li>
@@ -68,15 +90,37 @@ const IndexPage = () => (
     </section>
 
     <section id="two" className="wrapper alt style2">
-      <section className="spotlight">
+
+
+      {dataArray.map(({ company, jobTitle, imageUrl, bullets }) => (
+        <section className="spotlight">
+          <div className="image">
+            <img src={imageUrl} alt="" />
+          </div>
+          <div className="content">
+            <h2 style={{ textTransform: 'none', letterSpacing: '3px', fontSize: '1.7em', marginBottom: '0px' }}>
+              {company}
+
+            </h2>
+            <p style={{ textTransform: 'uppercase', color: 'gray', letterSpacing: '1px', fontSize: '17px', marginBottom: '25px' }}>{jobTitle}</p>
+            <ul>
+              {bullets && bullets.map((bullet) => (
+                <li style={{ fontSize: '14px', fontWeight: '300', color: 'gray' }}>{bullet}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ))}
+
+      {/* <section className="spotlight">
         <div className="image">
           <img src={pic1} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Magna primis lobortis
+          <h2 style={{textTransform: 'none'}}>
+            SKUPOS
             <br />
-            sed ullamcorper
+            <span style={{color: 'gray'}}>Frontend Engineer</span>
           </h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -90,9 +134,9 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Tortor dolore feugiat
+            Nima Labs
             <br />
-            elementum magna
+            Frontend Engineer
           </h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -106,43 +150,44 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Augue eleifend aliquet
+            Zymergen
             <br />
-            sed condimentum
+            Software Engineer
           </h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
             imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
           </p>
         </div>
-      </section>
+      </section> */}
+
+
+
+
     </section>
 
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>Passion Projects</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+            I've build several websites that get live traffic. Even though it gets less than 100 unique visits a month, it's live and used by people.
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
           </p>
         </header>
         <ul className="features">
           <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
+            <h3>Guess the lines yourself</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
           <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
+            <h3>Get Tennis Alerts</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              tincidunt nullam amet leo Aenean ligula consequat consequat. 
             </p>
           </li>
           <li className="icon solid fa-code">
