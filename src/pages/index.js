@@ -14,19 +14,33 @@ const dataArray = [
     company: 'SKUPOS',
     jobTitle: 'Frontend Engineer',
     imageUrl: pic1,
-    bullets: ["Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf ", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf consectetur interdum.", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf Donec hendrerit imperdiet.", "Mauris eleifend fringilla nullam aenean mi ligula"],
+    bullets: [
+      "Lead efforts to implement complete website redesign: adding in better SEO, accessibility, reusable components, preview mode and A / B testing.",
+      "Worked as sole Marketing Tech developer - create landing pages, marketing emails, that were backwards compatible with  pre IE11 browsers, outlook and gmail clients.",
+      "Conducted SEO and accessibility audits on current website, with detailed action plan for improvement.",
+      "Assisted with internal facing application displaying customer data with GraphQL.",
+    ],
   },
   {
     company: 'Nima Labs',
     jobTitle: 'Frontend Engineer',
     imageUrl: pic2,
-    bullets: ["Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf ", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf consectetur interdum.", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf Donec hendrerit imperdiet.", "Mauris eleifend fringilla nullam aenean mi ligula"],
+    bullets: [
+      "Architected a rewards system engine for customers.Reward earnings were automatically triggered by database stream functions when users perform specific actions.",
+      "Lead payment systems implementation project: integrating with Paypal and Affirm at checkout.",
+      "Learned marketing and tracking protocols/ best practices on the fly, while debugging hard to solve edgecase issues that’s not generally known to developers or marketers.",
+      "Integrated Nima’s marketing and analytics tools; including Segment, Google Analytics, Facebook Pixel, Iterable, Criteo, AdRoll, Talkable and others.",
+    ],
   },
   {
     company: 'Zymergen',
     jobTitle: 'Software Engineer',
     imageUrl: pic3,
-    bullets: ["Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf ", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf consectetur interdum.", "Aliquam ut ex ut augue fadfadf  afdfas fadfas fasfa sfasf asdf  asdfa dsfas asdf asdfasd fdasfas fas fdasf asdf adsf asdfasdf asdfasdfa daf dasf Donec hendrerit imperdiet.", "Mauris eleifend fringilla nullam aenean mi ligula"],
+    bullets: [
+      "Developed Laboratory Information Management System(LIMS) dashboard for scientific researchers.",
+      "Worked with AngularJS and Ruby on Rails codebase, in collaboration with additional Java and Python codebases that the company has.",
+
+    ],
   },
 ]
 
@@ -57,21 +71,17 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
+            Passion for fast paced startups
             <br />
-            eget augue amet aliquet nisl cep donec
+            {/* eget augue amet aliquet nisl cep donec */}
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            While working at a small startup, I lead implementations on full-stack features, taking them from idea to research to implementation. This includes database schema design (noSQL) and api design on the backend. I worked on an e-commerce site built in React & Redux. I also take on many marketing tech related responsibilities, which includes a understanding of analytics and tracking tools.
           </p>
         </header>
         <ul className="icons major">
           <li>
-            <span className="icon fa-hdd major style1">
+            <span className="icon fa-flag major style1">
               <span className="label">Lorem</span>
             </span>
           </li>
