@@ -15,10 +15,10 @@ const dataArray = [
     jobTitle: 'Frontend Engineer',
     imageUrl: pic1,
     bullets: [
-      "Lead efforts to implement complete website redesign: adding in better SEO, accessibility, reusable components, preview mode and A / B testing.",
-      "Worked as sole Marketing Tech developer - create landing pages, marketing emails, that were backwards compatible with  pre IE11 browsers, outlook and gmail clients.",
-      "Conducted SEO and accessibility audits on current website, with detailed action plan for improvement.",
-      "Assisted with internal facing application displaying customer data with GraphQL.",
+      "Led efforts to completely redesign our website by adding in stronger SEO, accessibility, updated UI, improved page speed, built reusable sections/components and a live preview mode for our copy editor.",
+      "Created mobile responsive landing pages and marketing emails that were backwards compatible with pre IE11 browsers, outlook and gmail clients (checked via BrowserStack and Litmus)",
+      "Added e2e testing, error logging, and form submission error handler to improve site reliability.",
+      "Partnered with our internal apps team to help develop a dashboard for our customer success reps.",
     ],
   },
   {
@@ -26,10 +26,10 @@ const dataArray = [
     jobTitle: 'Frontend Engineer',
     imageUrl: pic2,
     bullets: [
-      "Architected a rewards system engine for customers.Reward earnings were automatically triggered by database stream functions when users perform specific actions.",
-      "Lead payment systems implementation project: integrating with Paypal and Affirm at checkout.",
-      "Learned marketing and tracking protocols/ best practices on the fly, while debugging hard to solve edgecase issues that’s not generally known to developers or marketers.",
-      "Integrated Nima’s marketing and analytics tools; including Segment, Google Analytics, Facebook Pixel, Iterable, Criteo, AdRoll, Talkable and others.",
+      "Architected a rewards system engine that automatically updates customer points based on database stream functions when users perform specific actions.",
+      "Integrated marketing and analytics tools for seamless communication across different platforms like Segment.io, Google Analytics, Facebook Pixel, Iterable, Criteo, AdRoll, Talkable and others.",
+      "Added pay with Paypal and Affirm options to the checkout page, improving customer experience.",
+      "Tackled challenging issues emerging from using multiple tracking tools, for example solving cross subdomain tracking issues between Segment and Google.",
     ],
   },
   {
@@ -38,8 +38,8 @@ const dataArray = [
     imageUrl: pic3,
     bullets: [
       "Developed Laboratory Information Management System(LIMS) dashboard for scientific researchers.",
-      "Worked with AngularJS and Ruby on Rails codebase, in collaboration with additional Java and Python codebases that the company has.",
-
+      "Partnered with leadership to work on a dashboard for scientific researchers, converting a Ruby on Rails tempting codebase into AngularJS.",
+      "Completed the task within the time frame of the 6 month contract period.",
     ],
   },
 ]
@@ -76,7 +76,10 @@ const IndexPage = () => (
             {/* eget augue amet aliquet nisl cep donec */}
           </h2>
           <p>
-            While working at a small startup, I lead implementations on full-stack features, taking them from idea to research to implementation. This includes database schema design (noSQL) and api design on the backend. I worked on an e-commerce site built in React & Redux. I also take on many marketing tech related responsibilities, which includes a understanding of analytics and tracking tools.
+            I’m a quick moving, problem solving, and detailed software engineer looking to help startups succeed.
+          </p>
+          <p>
+            I’m an active collaborator in planning meetings and really enjoy working with smaller teams. I’m usually solely responsible for the projects that I’m given, but I make sure to keep different perspectives in mind and ask questions when I’m stuck. Often I’ve been asked to project manage myself and do the requirement gathering on my own.
           </p>
         </header>
         <ul className="icons major">
@@ -200,6 +203,8 @@ const IndexPage = () => (
               tincidunt nullam amet leo Aenean ligula consequat consequat. 
             </p>
           </li>
+          <li></li>
+          <li></li>
           <li className="icon solid fa-code">
             <h3>Mus Scelerisque</h3>
             <p>
