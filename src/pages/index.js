@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-
 import Scroll from '../components/Scroll';
+import ProjectList from '../components/ProjectList';
 
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
@@ -54,7 +54,7 @@ const IndexPage = () => (
           <li>
             <Scroll type="id" element="one">
               <a href="/#" className="button primary">
-                Explore
+                See Resume
               </a>
             </Scroll>
           </li>
@@ -173,13 +173,9 @@ const IndexPage = () => (
           </p>
         </div>
       </section> */}
-
-
-
-
     </section>
 
-    <section id="three" className="wrapper style3 special">
+    {/* <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
           <h2>Passion Projects</h2>
@@ -235,26 +231,25 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
-    </section>
+    </section> */}
 
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Find out More</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            Feel free to checkout my GitHub or read my recommendations on LinkedIn
           </p>
         </header>
         <ul className="actions stacked">
           <li>
             <a href="/#" className="button fit primary">
-              Activate
+              Resume
             </a>
           </li>
           <li>
             <a href="/#" className="button fit">
-              Learn More
+              LinkedIn
             </a>
           </li>
         </ul>
